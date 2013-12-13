@@ -1,7 +1,13 @@
 {% extends "infopage_mcindoe.html" %}
 
+{% block head %}
+    <title>{{ global_site.name }} - Contact</title>
+    <meta name="keywords" content="contact, contact details, phone, email, number, address, name, contact us">
+    <meta name="description" content="Contact details for McindoeDesign">
+{% endblock head %}
+
 {% block content %}
-<content>
+
 
 
 <p>
@@ -15,15 +21,15 @@
 <h5 style="margin-left: 10px">
     Email : maddy@mcindoedesign.com<br />
     Phone: +44 (0) 7930 205 559<br />
-    <br />
-    Postal Address:<br />
-    <br />
-    Maddy Mcindoe<br />
-    {{ contact.addressline1 }}<br />
-    {{ contact.addressline2 }}<br />
-    {{ contact.city }}<br />
+{#    <br />#}
+{#    Postal Address:<br />#}
+{#    <br />#}
+{#    Maddy Mcindoe<br />#}
+{#    {{ contact.addressline1 }}<br />#}
+{#    {{ contact.addressline2 }}<br />#}
+{#    {{ contact.city }}<br />#}
 {#    {{ contact.county }}<br />#}
-    {{ contact.postcode }}
+{#    {{ contact.postcode }}#}
 </h5>
 
 {#<h3>Here's how to get in touch</h3>#}
@@ -44,5 +50,5 @@
 
 </p>
 
-</content>
+
 {% endblock %}
